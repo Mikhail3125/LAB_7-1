@@ -53,9 +53,9 @@ function menuFinalSwipe() {
 
 function menuOpen() {
     menu.classList.add('active');
-    menu.style.cssText = 'transition: transform .2s linear';
+    menu.style.cssText = 'transition: transform .4s linear';
     overlay.classList.add('active');
-    overlay.style.cssText = 'transition: opacity .2s linear';
+    overlay.style.cssText = 'transition: opacity .4s linear';
     moveDistance = 0;
     last_position = moveDistance;
 }
