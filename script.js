@@ -37,7 +37,7 @@ function menuDrag(e) {
     moveDistance = Math.max(Math.min(e.clientX - mouseDownX + last_position, 0), -menu_width);
     menu.style.cssText = 'transform: translate(' + moveDistance + 'px, 0px)';
     if (moveDistance > -menu_width) {
-        var opacity = Math.min((moveDistance + menu_width) / menu_width, 1);
+        let opacity = Math.min((moveDistance + menu_width) / menu_width, 1);
         overlay.style.cssText = 'visibility: visible; opacity:' + opacity + '';
     } else {
         overlay.style.cssText = 'visibility: hidden';
